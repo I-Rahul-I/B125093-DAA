@@ -220,6 +220,7 @@ void createGnuplotScript(void) {
 int main(void) {
     createCsvFiles();
     createGnuplotScript();
+    system("gnuplot plot.gp");
     printf("CSV files created.\n");
     printf("Gnuplot script created.\n");
     printf("Plot generated as dictionary_growth.png.\n");
